@@ -1,0 +1,90 @@
+*vimsort.txt*           For Vim version 8               Last change: 2019 Nov 30
+*vimsort* *vim-hex*
+
+                          _                          _   ~
+                   __   _(_)_ __ ___  ___  ___  _ __| |_ ~
+                   \ \ / / | '_ ` _ \/ __|/ _ \| '__| __|~
+                    \ V /| | | | | | \__ \ (_) | |  | |_ ~
+                     \_/ |_|_| |_| |_|___/\___/|_|   \__|~
+
+                            Sort with text objects
+
+==============================================================================
+CONTENTS                                                      *vimsort-contents*
+
+    1. Intro ................................................... |vimsort-intro|
+    2. Usage ................................................... |vimsort-usage|
+    3. Configuration ................................... |vimsort-configuration|
+    4. License ............................................... |vimsort-license|
+    5. Bugs ..................................................... |vimsort-bugs|
+    6. Contributing ..................................... |vimsort-contributing|
+    7. Credits ............................................... |vimsort-credits|
+
+==============================================================================
+INTRO                                                            *vimsort-intro*
+
+vimsort is a vim plugin that makes sorting text objects easier.
+
+==============================================================================
+USAGE                                                            *vimsort-usage*
+
+Install it with your favorite plugin manager, and then use one of the provided
+mappings!
+
+*gs*
+    In Normal mode, sorts the following {motion} or {text-object}.
+    In visual mode, sorts the selection.
+    All sorts are done {linewise}.
+
+Example: >
+    " sort a paragraph
+    gsap
+<
+==============================================================================
+CONFIGURATION                                            *vimsort-configuration*
+
+*g:vimsort_maps*
+    A dictionary of `n`ormal and `v`isual mode mappings to create. Leave the
+    values empty to not create any mappings (you may want to see the plugin
+    code to create mappings at that point).
+
+    Default: >
+        let g:vimsort_maps = get(g:, 'vimsort_maps', {
+            \ 'n': 'gs',
+            \ 'v': 'gs',
+            \ })
+<
+==============================================================================
+LICENSE                                                        *vimsort-license*
+
+MIT License. Copyright © 2019 D. Ben Knoble
+Full text available at
+https://github.com/benknoble/vimsort/blob/master/LICENSE
+
+==============================================================================
+BUGS                                                              *vimsort-bugs*
+
+At the time of this writing, no major bugs have been found.
+
+If you find one and wish to report it, you can do so at
+https://github.com/benknoble/vimsort/issues
+
+==============================================================================
+CONTRIBUTING                                              *vimsort-contributing*
+
+Want to submit a new feature, bugfix, or hack on vimsort?
+Submit pull requests to
+https://github.com/benknoble/vimsort/pulls
+
+Existing code determines style guidelines.
+
+==============================================================================
+CREDITS                                                        *vimsort-credits*
+
+Maintained by:
+- D. Ben Knoble (https://github.com/benknoble)
+
+Git repository:
+https://github.com/benknoble/vimsort
+
+ vim:tw=78:ts=8:ft=help:norl:
