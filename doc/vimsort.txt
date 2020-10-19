@@ -1,5 +1,5 @@
 *vimsort.txt*           For Vim version 8               Last change: 2019 Nov 30
-*vimsort* *vim-hex*
+*vimsort* *vim-sort*
 
                           _                          _   ~
                    __   _(_)_ __ ___  ___  ___  _ __| |_ ~
